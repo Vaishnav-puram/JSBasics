@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>a:</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="enter a number" id="a">
+                </td>
+            </tr>
+            <tr id="B">
+                <td>
+                    <label>b:</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="enter a number" id="b">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="operation"  id="op" onchange="sel()">
+                        <option value="....">----Select----</option>
+                        <option value="addition">Addition</option>
+                        <option value="subtraction">Subraction</option>
+                        <option value="multiplication">Multiplication</option>
+                        <option value="division">Division</option>
+                        <option value="factorial">Factorial</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" onclick="calc()">Calculate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Result</label>
+                </td>
+                <td>
+                    <input type="text" id="res">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
