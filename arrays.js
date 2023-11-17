@@ -10,3 +10,7 @@ console.log(txt);
 for(var e in numbers){
     console.log(numbers[e]);
 }
+
+var arr=["python","java","MySQL"];
+var res=arr.map(a=>a.substring(0,3)).reduce((a,b)=>a.concat(b));
+console.log(res);
